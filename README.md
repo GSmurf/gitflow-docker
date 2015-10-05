@@ -15,3 +15,9 @@ Inspiration taken from:  [Jess' blog](https://blog.jessfraz.com/post/docker-cont
                    kramos/gitflow \
                    <your gitflow command line>
 
+#Tips
+
+When using Docker in windows, volume mapping requires the explict path startig with a double slash e.g.
+
+    -v //c/users/kramos/working/my-git-repo/:/var/git-repo-home
+
