@@ -1,18 +1,18 @@
 FROM ubuntu
-MAINTAINER kramos
+MAINTAINER GSmurf
 
 RUN apt-get update 
 RUN apt-get install -y git-flow
 
 ENV RUNUSER safeuser
-ENV WORKDIR /var/git-repo-home
+ENV WORKDIR /home/vagrant
 ENV UID 1000
 
 RUN useradd -d $WORKDIR -u $UID -m -s /bin/bash $RUNUSER
 
-VOLUME /var/git-repo-home
+VOLUME /home/vagrant
 
-WORKDIR /var/git-repo-home
+WORKDIR /home/vagrant
 
 USER $RUNUSER
 
