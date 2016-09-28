@@ -23,7 +23,7 @@ When using Docker in windows, volume mapping requires the explict path startig w
 
 To use easely this container, create an alias :
 ```
-alias gf='docker run --rm -v `pwd`:/var/git-repo-home gismo/gitflow'
+alias gf='docker run --rm -v `pwd`:/var/git-repo-home -v ~/.ssh:/home/vagrant/.ssh gismo/gitflow'
 ```
 And use it like this :
 ```
