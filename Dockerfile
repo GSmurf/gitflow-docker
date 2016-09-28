@@ -6,7 +6,7 @@ RUN apt-get install -y git-flow
 
 ENV RUNUSER safeuser
 ENV WORKDIR /var/git-repo-home
-ENV UID 667
+ENV UID 1000
 
 RUN useradd -d $WORKDIR -u $UID -m -s /bin/bash $RUNUSER
 
